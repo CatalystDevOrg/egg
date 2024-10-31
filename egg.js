@@ -19,4 +19,13 @@ egg.onclick = () => {
     }
 }
 
-document.body.appendChild(egg)
+const today = new Date();
+const targetDate = new Date(2024, 9, 31);
+
+if (today.getFullYear() === targetDate.getFullYear() && 
+    today.getMonth() === targetDate.getMonth() && 
+    today.getDate() === targetDate.getDate()) {
+    document.body.appendChild(egg);
+} else {
+    return;
+}
