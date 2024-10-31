@@ -26,6 +26,4 @@ if (today.getFullYear() === targetDate.getFullYear() &&
     today.getMonth() === targetDate.getMonth() && 
     today.getDate() === targetDate.getDate()) {
     document.body.appendChild(egg);
-} else {
-    return;
 }
